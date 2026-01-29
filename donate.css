@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.donationform{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    height: 100vh;
+    /* border: 1px solid black; */
+    background-color: rgb(216, 227, 236);
+}
+
+
+
+.formdetails{
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid black; */
+    height: 80vh;
+    width: 40vw;
+    border-radius: 7px;
+}
+
+.imagesection{
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+
+.formheading{
+    margin-top: 0.8rem;
+    /* border: 1px solid black; */
+}
+#head{
+    display: flex;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(43, 41, 38);
+    font-size: 1.63rem;
+}
+#description{
+    display: flex;
+    justify-content: center;
+    font-size: 1.03rem;
+}
+
+.form{
+    padding: 2rem;
+    margin-top: 0.5rem;
+ /* border: 1px solid blue; */
+}
+
+.donarname{
+    /* border: 1px solid; */
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content:space-between;
+    font-weight: 400;
+}
+
+.nameinput{
+    height: 1.8rem;
+  padding-left: 0.5rem;
+}
+
+
+/* .donaremail{ */
+  /* border: 1px solid black; */
+/* } */
+
+.emailinput{
+     height: 1.8rem;
+    width: 25rem;
+    padding-left: 0.8rem;
+}
+
+
+.donaradd{
+    /* border: 1px solid black; */
+    margin-top: 1.2rem;
+    
+}
+
+.addinput{
+    padding-left: 1.2rem;
+    height: 1.8rem;
+    width: 30vw;
+}
+
+.donarcityandstate{
+    display: flex;
+    justify-content: space-between;
+     /* border: 1px solid black; */
+ margin-top: 1rem;
+}
+
+.cityinput{
+    height: 1.8rem;
+}
+
+
+.postalcodeandcountry{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.9rem;
+}
+
+.postalinput{
+    height: 1.8rem;
+    padding-left: 0.8rem;
+}
+
+
+.countryinput{
+    height: 1.8rem;
+    width: 15rem;
+}
+
+
+.donateamount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.amount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.9rem;
+}
+
+.donateinput{
+    height: 1.8rem;
+    padding-left: 0.5rem;
+}
+
+.donatebutton{
+    background-color: white;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  height: 2.7rem;
+  width: 8rem;
+  font-weight: bold;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  transition: 0.2s ease-out;
+}
+
+.donatebutton:hover{
+    background-color: rgb(16, 42, 100);
+    color:rgb(230, 231, 231);
+}
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - section</title>
+    <link rel="stylesheet" href="donate.css">
+</head>
+
+<body>
+    <div class="donationform">
+        <div class="formdetails">
+            <div class="imagesection">
+                <img src="donate.png" alt="donate" height="160rem">
+            </div>
+            <div class="formheading">
+                <h1 id="head"> DONATION FORM </h1>
+                <p id="description">Just a peny could save a soul</p>
+            </div>
+
+            <form class="form">
+
+
+                <div class="donarname">
+                    <div id="firstname">
+                        <label for="firstname" class="firstname">First name: </label>
+                        <input type="text" name="firstname" class="nameinput"   >
+                    </div>
+
+                    <div id="lastname">
+                        <label for="Last tname">Last name: </label>
+                        <input type="text" name="fLast " id="Last name " class="nameinput"  >
+                    </div>
+
+
+                </div>
+                <br>
+                <div class="donaremail">
+                    <label for="useremail">Enter email ID:</label>
+                    <input type="email" name="useremail" id="useremail" class="emailinput"
+                        placeholder="ex - yourname@gmail.com" >
+                </div>
+
+                <div class="donaradd">
+                    <label for="address">Enter current address: </label>
+                    <input type="text" name="address " id="address " class="addinput" placeholder="Enter address" >
+                </div>
+
+                <div class="donarcityandstate">
+                    <div id="city">
+                        <label for="city">Enter your city: </label>
+                        <input type="text" name="city " id="city " class="cityinput" placeholder="Enter city" >
+                    </div>
+
+                    <div id="state">
+                        <label for="city">Enter your state: </label>
+                        <input type="text" name="city " id="city " class="cityinput" placeholder="Enter state" >
+                    </div>
+                </div>
+
+                <div class="postalcodeandcountry">
+                    <div class="postalcode">
+                        <label for="zipcode">Postal / zip code : </label>
+                        <input type="text" class="postalinput" name="zipcode" >
+                    </div>
+
+                    <div class="country">
+                        <label for="country">Country: </label>
+                        <select name="country" id="country" class="countryinput">
+                            <option value="select country">select country:</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Newzeland">Newzeland</option>
+                            <option value="Dubai">Dubai</option>
+                            <option value="Nepal">Nepal</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="donateamount">
+                    <div class="amount">
+                        <label for="donate">Enter amount:</label>
+                        <input type="number" name="donate" id="donate" class="donateinput" >
+                    </div>
+
+                    <div class="donatebutton">
+                        
+                      <input type="submit" name="donate" id="donate" value="DONATE" class="donatebutton" >
+                    </div>
+                </div>
+
+            </form>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
