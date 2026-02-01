@@ -8,6 +8,54 @@ body{
     width: 100%;
 }
 
+.Title{
+    font-size: 25px;
+   font-weight: bolder;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     animation-name: title1;
+     animation-duration: 2s;
+}
+
+
+.name{
+    position: relative;
+    color: rgb(92, 87, 87);
+    animation-name: title1;
+    animation-duration: 2s;
+}
+
+@keyframes title1{
+    from {
+    left: -500%;
+     
+    }
+    to {
+       left: 0%;
+    }
+
+}
+
+.name:hover{
+    color: rgb(14, 11, 11);
+}
+
+
+.navbar{
+    position: relative;
+    animation-name:nav ;
+    animation-duration: 2s;
+}
+
+@keyframes nav {
+    from {
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+
 .navsection{
     margin-top: 1rem;
     display: flex;
@@ -15,13 +63,9 @@ justify-content: space-evenly;
 align-items: center;
     max-width: 100vw;
     height: 10vh;
-    /* border: 1px solid black; */
+  
      background-color:  #ffffff;
 }
-
-
-
-
 
 li{
     list-style: none;
@@ -56,26 +100,6 @@ a{
 }
 
 
-
-.Title{
-    font-size: 25px;
-    color: #ffffff;
-   font-weight: bolder;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.name{
-    color: rgb(85, 85, 85);
-    /* position: relative; */
-    /* right: 10rem; */
-}
-
-.name:hover{
-    color: rgb(14, 11, 11);
-}
-
-
-
 /* main section */
 
 .container1{
@@ -87,8 +111,8 @@ a{
     grid-template-columns: repeat(2,1fr);
     column-gap: 2rem;
     padding: 2rem;
-      
 }
+
 
 
 .donatesection{
@@ -107,18 +131,17 @@ background-image: url(image.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 .description{
     width: 70%;
 
 }
+
 #gridsection{
-    
-    /* height: 100%; */
-    /* width: 100vw; */
-    /* border: 1px solid black; */
     border-radius: 10px 10px  ;
 }
+
 
 .donate{
     background-color: #ffffff;
@@ -308,8 +331,8 @@ font-weight: 600;
             display: flex;
             justify-content: center;
             /* border: 1px solid black; */
-            color: rgb(126, 135, 252);
-            text-shadow: 1px 2px 2px rgb(26, 25, 29);
+               color: rgb(65, 66, 68);
+            /* text-shadow: 1px 2px 2px rgb(26, 25, 29); */
             font-size: 1.54rem;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
@@ -340,7 +363,7 @@ font-weight: 600;
  flex: 0 0 8em;
     height: 5em;
     padding: 1em;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* background-color: cadetblue; */
     font-size: 3rem;
     border-radius: 5px;
@@ -352,8 +375,8 @@ font-weight: 600;
 .cards:hover{
     /* background-color: rgb(218, 219, 219); */
     transform: scale(1.1);
-    background-color: rgb(188, 201, 243);
-    box-shadow: 5px 8px 5px black;
+    /* background-color: rgb(188, 201, 243); */
+   box-shadow: 4px 3px 8px rgb(14, 12, 15);
 }
 
 @keyframes spin {
@@ -410,4 +433,383 @@ font-weight: 600;
     background-position: center;
     background-repeat: no-repeat;
    
+}
+
+
+/* BEST NGOS */
+
+.bestngotitle{
+    display: flex;
+    justify-content: center;
+    font-size: 1.54rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(65, 66, 68);
+}
+
+.bestngoscontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bestngos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2rem;
+   row-gap: 2rem;
+   column-gap: 8rem;
+}
+
+.ngo{
+    border: 2.5px solid black;
+    height: 65vh;
+    width: 23vw;
+    border-radius: 8px;
+}
+
+/* ngo 1 */
+
+
+#ngo1{
+  padding: 0.3rem;
+}
+
+.ngo1image{
+ 
+   height: 50%;
+   background-image: url(ngo1.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.ngo1name{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    font-size:20px ;
+    word-spacing:10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ngo1description{
+    margin-top: 0.3rem;
+    padding: 0.2rem;
+    /* border: 1px solid black; */
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ngoknowbutton{
+    margin-top: 0.9rem;
+}
+.knowbutton{
+    border: 1.5px solid rgb(85, 85, 62);
+    padding: 0.6rem 0.8rem;    
+    border-radius: 0.5rem;
+    font-weight: 500;
+    color: rgb(46, 4, 143);
+    transition: 0.2s ease-out;
+    font-size: 0.8rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.knowbutton:hover{
+    background-color: hsl(244, 34%, 41%);
+    color: rgb(255, 255, 255);
+}
+
+
+/* ngo2 */
+
+
+#ngo2{
+  padding: 0.3rem;
+}
+
+
+.ngo2image{
+  
+   height: 50%;
+   background-image: url(ngo2.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+
+.ngo2name{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    font-size:20px ;
+    word-spacing:10px;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande','Lucida Sans', Arial, sans-serif;
+}
+
+
+.ngo2description{
+    margin-top: 0.3rem;
+    padding: 0.2rem;
+    /* border: 1px solid black; */
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.ngoknowbutton{
+    margin-top: 0.9rem;
+}
+.knowbutton{
+    border: 1.5px solid rgb(14, 14, 13);
+    padding: 0.6rem 0.8rem;    
+    border-radius: 0.5rem;
+    font-weight: 500;
+    color: rgb(46, 4, 143);
+    transition: 0.2s ease-out;
+    font-size: 0.8rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.knowbutton:hover{
+    background-color: hsl(244, 34%, 41%);
+    color: rgb(255, 255, 255);
+}
+
+
+/* ngo3 */
+
+
+#ngo3{
+  padding: 0.3rem;
+}
+
+
+
+
+.ngo3image{
+   border: 1px solid rgb(0, 0, 0);
+   height: 50%;
+   background-image: url(ngo3.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+
+
+
+.ngo3name{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    font-size:20px ;
+    word-spacing:10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande','Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+.ngo3description{
+    margin-top: 0.3rem;
+    padding: 0.2rem;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+.ngoknowbutton{
+    margin-top: 0.9rem;
+}
+.knowbutton{
+    border: 1.5px solid rgb(14, 14, 13);
+    padding: 0.6rem 0.8rem;    
+    border-radius: 0.5rem;
+    font-weight: 500;
+    color: rgb(46, 4, 143);
+    transition: 0.2s ease-out;
+    font-size: 0.8rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+.knowbutton:hover{
+    background-color: hsl(244, 34%, 41%);
+    color: rgb(255, 255, 255);
+}
+
+
+/* ngo 4 */
+
+#ngo4{
+  padding: 0.3rem;
+}
+
+
+.ngo4image{
+   height: 50%;
+   background-image: url(ngo4.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.ngo4name{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    font-size:20px ;
+    word-spacing:10px;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande','Lucida Sans', Arial, sans-serif;
+}
+
+.ngo4description{
+    margin-top: 0.3rem;
+    padding: 0.2rem;
+    /* border: 1px solid black; */
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.ngoknowbutton{
+    margin-top: 0.9rem;
+}
+.knowbutton{
+    border: 1.5px solid rgb(14, 14, 13);
+    padding: 0.6rem 0.8rem;    
+    border-radius: 0.5rem;
+    font-weight: 500;
+    color: rgb(46, 4, 143);
+    transition: 0.2s ease-out;
+    font-size: 0.8rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.knowbutton:hover{
+    background-color: hsl(244, 34%, 41%);
+    color: rgb(255, 255, 255);
+}
+
+
+/* ngo 5 */
+
+#ngo5{
+  padding: 0.3rem;
+}
+
+.ngo5image{
+   height: 50%;
+   background-image: url(ngo5.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.ngo5name{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    font-size:20px ;
+    word-spacing:10px;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande','Lucida Sans', Arial, sans-serif;
+}
+
+
+.ngo5description{
+    margin-top: 0.3rem;
+    padding: 0.2rem;
+
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+.ngoknowbutton{
+    margin-top: 0.9rem;
+}
+.knowbutton{
+    border: 1.5px solid rgb(14, 14, 13);
+    padding: 0.6rem 0.8rem;    
+    border-radius: 0.5rem;
+    font-weight: 500;
+    color: rgb(46, 4, 143);
+    transition: 0.2s ease-out;
+    font-size: 0.8rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.knowbutton:hover{
+    background-color: hsl(244, 34%, 41%);
+    color: rgb(255, 255, 255);
+}
+
+
+/* ngo 6 */
+
+#ngo6{
+  padding: 0.3rem;
+}
+
+
+.ngo6image{
+   height: 50%;
+   background-image: url(ngo6.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.ngo6name{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    font-size:20px ;
+    word-spacing:10px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande','Lucida Sans', Arial, sans-serif;
+}
+
+
+.ngo6description{
+    margin-top: 0.3rem;
+    padding: 0.2rem;
+    /* border: 1px solid black; */
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.ngoknowbutton{
+    margin-top: 0.9rem;
+}
+.knowbutton{
+    border: 1.5px solid rgb(14, 14, 13);
+    padding: 0.6rem 0.8rem;    
+    border-radius: 0.5rem;
+    font-weight: 500;
+    color: rgb(46, 4, 143);
+    transition: 0.2s ease-out;
+    font-size: 0.8rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.knowbutton:hover{
+    background-color: hsl(244, 34%, 41%);
+    color: rgb(255, 255, 255);
 }
