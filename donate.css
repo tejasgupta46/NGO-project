@@ -1,161 +1,219 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+
 }
+
 body{
     height: 100%;
     width: 100%;
 }
+
 .donationform{
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
-    /* border: 1px solid black; */
-    background-color: rgb(216, 227, 236);
+    border: 2px solid rgb(185, 49, 49);
+ height: 100vh;
+ width: 100vw;
+
 }
 
-
-
-.formdetails{
-    background-color: rgb(255, 255, 255);
-    /* border: 1px solid black; */
-    height: 80vh;
-    width: 40vw;
-    border-radius: 7px;
+.donationcontainer2{
+    display: flex;
+    height: 70vh;
+    width: 70vw;
+    border: 1px solid black;
 }
 
-.imagesection{
-  display: flex;
-  justify-content: center;
-  /* border: 1px solid black; */
+.donationimage{ 
+    
+    width: 30%;
+    background-image: url(donation\ image.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+       border: 1px solid black;
+   
 }
 
+.formsection{
+    width: 80%;
+  height: 100%;
+    border: 1px solid black;
+  
+}
 
 .formheading{
-    margin-top: 0.8rem;
-    /* border: 1px solid black; */
-}
-#head{
     display: flex;
     justify-content: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(43, 41, 38);
-    font-size: 1.63rem;
-}
-#description{
-    display: flex;
-    justify-content: center;
-    font-size: 1.03rem;
+    align-items: center;
+    border: 1px solid black;
+  height: 5vh;
+  width: 100%;
 }
 
 .form{
-    padding: 2rem;
-    margin-top: 0.5rem;
- /* border: 1px solid blue; */
-}
-
-.donarname{
-    /* border: 1px solid; */
-    margin-top: 0.8rem;
     display: flex;
-    justify-content:space-between;
-    font-weight: 400;
+    justify-content: center;
+    padding: 1rem;
+     border: 1px solid black;
+     height: 93%;
+     width: 100%;
 }
 
-.nameinput{
-    height: 1.8rem;
-  padding-left: 0.5rem;
+.form1{
+    height: 60vh;
+    width: 60%;
+    border: 1px solid black;
 }
 
+/* form  name section */
 
-/* .donaremail{ */
-  /* border: 1px solid black; */
-/* } */
-
-.emailinput{
-     height: 1.8rem;
-    width: 25rem;
-    padding-left: 0.8rem;
-}
-
-
-.donaradd{
-    /* border: 1px solid black; */
-    margin-top: 1.2rem;
-    
-}
-
-.addinput{
-    padding-left: 1.2rem;
-    height: 1.8rem;
-    width: 30vw;
-}
-
-.donarcityandstate{
-    display: flex;
-    justify-content: space-between;
-     /* border: 1px solid black; */
- margin-top: 1rem;
-}
-
-.cityinput{
-    height: 1.8rem;
-}
-
-
-.postalcodeandcountry{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.9rem;
-}
-
-.postalinput{
-    height: 1.8rem;
-    padding-left: 0.8rem;
-}
-
-
-.countryinput{
-    height: 1.8rem;
-    width: 15rem;
-}
-
-
-.donateamount{
+.namesection{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
+    border: 1px solid black;
+    gap:0.3rem;
+}
+
+.name{
+    font-size: 0.8rem;
+
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.namein{
+    padding-left: 1rem;
+    height: 3.5vh;
+    width: 25vw;
+}
+
+/* form phone section */
+
+
+.phonesection{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 1.1rem;
+    border: 1px solid black;
+}
+
+.phone{
+     font-size: 0.8rem;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.phinput{
+        padding-left: 1rem;
+    height: 3.5vh;
+    width: 25vw;
+}
+
+
+
+/* email  section */
+
+.emailsection{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    gap: 0.2rem;
+   margin-top: 1.1rem;
+}
+
+.email{
+         font-size: 0.8rem;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.emailinput{
+        padding-left: 1rem;
+height: 3.5vh;
+width: 25vw;
+}
+
+
+/* donate amount section */
+
+.donateamountsection{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+     margin-top: 1.1rem;
+    border: 1px solid black;
 }
 .amount{
+             font-size: 0.8rem;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.donateamounts{
     display: flex;
-    justify-content: center;
+  gap: 1rem;
+    /* border: 1px solid black; */
+    padding: 0.8rem;
+}
+
+.donationamount{
+    background-color: rgb(255, 255, 255);
+    border: 1.5px solid rgb(4, 130, 248);
+    height: 3vh;
+      width: 3vw;
+      cursor: pointer;
+      border-radius: 3.5px;
+      transition: 0.2s ease-out;
+}
+
+.donationamount:hover{
+    background-color: rgb(121, 196, 231)
+}
+
+
+
+/*  */
+/* paymentmethod section */
+
+
+.paymentmethods{
+    display: flex;
+    justify-content:safe;
     align-items: center;
-    margin-top: 1.9rem;
+    border: 1px solid black;
+    gap: 0.8rem;
+    margin-top: 1.1rem;
+
 }
 
-.donateinput{
-    height: 1.8rem;
-    padding-left: 0.5rem;
+.phonepay{
+    display: flex;
 }
 
-.donatebutton{
-    background-color: white;
-  font-size: 1.1rem;
-  border-radius: 5px;
-  height: 2.7rem;
-  width: 8rem;
-  font-weight: bold;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-  transition: 0.2s ease-out;
+.paypal{
+    display: flex;
 }
 
-.donatebutton:hover{
-    background-color: rgb(16, 42, 100);
-    color:rgb(230, 231, 231);
+/*  */
+/* paymentdetails */
+
+
+.paymentdetails{
+    display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+   margin-top: 1.1rem;
+  border: 1px solid black;
 }
 
+.details{
+             font-size: 0.8rem;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.paymentdetails input{
+    height: 3vh;
+    width: 25vw;
+}
